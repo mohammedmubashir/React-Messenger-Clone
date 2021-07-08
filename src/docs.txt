@@ -1,0 +1,41 @@
+1. Created React app
+2. deleted unwanted files
+3. making firebase project and installing firebase as global
+4. creating a input field and a button
+5. creating a use state [input,setInput]
+6. adding value as input in input field
+7. adding onChange to input with setInput to e.target.value
+8. adding a onclick to buttonmaking function for buttonclick 
+9. making a new use state [messages,setMessages] eith empty array
+10. In button click function adding setMessages as [...messages,input] so we can get all old messages as well as the new from input
+11. then to clear the input field .. seinput("")
+12. then mapping and printing messages as <p> tag
+13. wrap up the input and button inside a form so when we click enter it submits
+14. in button add attr type="submit"
+15. in sendMessage function add e.preventDefault so that it does not refresh the page
+16. installing material ui core and icons
+17. adding form control and changing button
+18. making a new message component
+19. cut and paste the <p> tag line in new message component
+20. and in app.js instead of <p> call the message component with prop text={message}
+21. and in component <p>{props.text}</p> (change p to h2)
+22. making a new hook for the username
+23. we need a prompt to save the name or ask user his/her name
+24. so using useState so when window loads up we need a prompt asking name and storing that name in setUsername
+25. adding h2 for welcome name
+26. now we want name and the message so changing the messages use state from array of strings to array of objects
+  const [messages, setMessages] = useState([{ username: 'mubbu', text: 'hyy' }, { username: 'pasha', text: 'bolo' }])
+27. so we need to change the props coz now message is an array of object so text will be message.text and username will be message.username
+28. updating the send message so with the old messages now we need name and input so [...messages,{username:username,text:input}]
+29. adding card component for UI and making a css file message.css
+30. updating the props in app.js so that diff our username with another username
+31. updating the props in message.js and for checking user name making a new const isUser
+32. npm i firebase
+33. adding the snippet and the config file in firebase.js
+34. adding a new use effect so it loads when db changes
+35. changing send message
+36. installing react fipmove
+37. wrapping entire message.js in a forward ref and adding ref
+38. adding flip move where we map the messages
+39. adding key or id where we can know which element is added to setMessages
+40. passing key in the messages
